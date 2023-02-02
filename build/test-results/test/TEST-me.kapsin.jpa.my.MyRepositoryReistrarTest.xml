@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.kapsin.jpa.my.MyRepositoryReistrarTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-02T06:40:27" hostname="DESKTOP-TVPTU4S" time="0.131">
+  <properties/>
+  <testcase name="myRepositoryTest()" classname="me.kapsin.jpa.my.MyRepositoryReistrarTest" time="0.131"/>
+  <system-out><![CDATA[15:40:23.744 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [MyRepositoryReistrarTest]: using SpringBootContextLoader
+15:40:23.748 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [me.kapsin.jpa.my.MyRepositoryReistrarTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:40:23.749 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [me.kapsin.jpa.my.MyRepositoryReistrarTest]: MyRepositoryReistrarTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:40:23.772 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [MyRepositoryReistrarTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+15:40:23.837 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\github\jpa\build\classes\java\main\me\kapsin\jpa\Application.class]
+15:40:23.839 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration me.kapsin.jpa.Application for test class me.kapsin.jpa.my.MyRepositoryReistrarTest
+15:40:23.906 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [MyRepositoryReistrarTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+15:40:23.908 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [MyRepositoryReistrarTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-02-02T15:40:24.124+09:00  INFO 10856 --- [    Test worker] m.k.jpa.my.MyRepositoryReistrarTest      : Starting MyRepositoryReistrarTest using Java 17.0.5 with PID 10856 (started by ost12 in D:\github\jpa)
+2023-02-02T15:40:24.125+09:00  INFO 10856 --- [    Test worker] m.k.jpa.my.MyRepositoryReistrarTest      : No active profile set, falling back to 1 default profile: "default"
+2023-02-02T15:40:24.645+09:00  INFO 10856 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02T15:40:24.656+09:00  INFO 10856 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2023-02-02T15:40:25.092+09:00  INFO 10856 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02T15:40:25.240+09:00  INFO 10856 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@261de205
+2023-02-02T15:40:25.241+09:00  INFO 10856 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02T15:40:25.281+09:00  INFO 10856 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02T15:40:25.331+09:00  INFO 10856 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-02T15:40:25.504+09:00  WARN 10856 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-02T15:40:25.702+09:00  INFO 10856 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-02T15:40:26.249+09:00  INFO 10856 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02T15:40:26.258+09:00  INFO 10856 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02T15:40:26.445+09:00  WARN 10856 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02T15:40:27.136+09:00  INFO 10856 --- [    Test worker] m.k.jpa.my.MyRepositoryReistrarTest      : Started MyRepositoryReistrarTest in 3.2 seconds (process running for 4.496)
+NEW DATA
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
